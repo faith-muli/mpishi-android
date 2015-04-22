@@ -1,9 +1,13 @@
 package com.example.faith.selfassesment;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.facebook.FacebookSdk;
 
@@ -15,6 +19,17 @@ public class Log_in extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
         FacebookSdk.sdkInitialize(getApplicationContext());
+
+        ImageButton firstButton = (ImageButton)findViewById(R.id.imageButton);
+
+        firstButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nextPage=new Intent(Log_in.this, HowItWorks1.class);
+                startActivity(nextPage);
+
+            }
+        });
     }
 
 

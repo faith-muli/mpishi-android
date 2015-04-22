@@ -1,9 +1,12 @@
 package com.example.faith.selfassesment;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class HowItWorks2 extends ActionBarActivity {
@@ -12,6 +15,16 @@ public class HowItWorks2 extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_how_it_works2);
+
+        Button linkButton= (Button)findViewById(R.id.button4);
+                linkButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent nextPage= new Intent(HowItWorks2.this, MainActivity.class);
+                        startActivity(nextPage);
+
+                    }
+                });
     }
 
 

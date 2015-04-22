@@ -26,6 +26,6 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/btnbelow"
         android:textColor="#ffffffff"
-        android:textAlignment="textStart" />
+        android:onClick="sendMessage"/>
 
 </RelativeLayout>
