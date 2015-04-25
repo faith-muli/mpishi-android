@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.faith.selfassesment" >
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
+        android:name=".Hashkey"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +14,7 @@
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
+            android:value="@string/app_id" />
 
         <activity
             android:name="com.facebook.FacebookActivity"
@@ -23,7 +26,6 @@
             android:name=".MainActivity"
             android:label="@string/app_name" >
         </activity>
-
         <activity
             android:name=".SplashScreen"
             android:label="@string/title_activity_splash_screen" >
@@ -37,11 +39,7 @@
         <activity
             android:name=".Log_in"
             android:label="@string/title_activity_log_in" >
-            <intent-filter>
-                <action android:name="com.example.faith.selfassesment.Log_in" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".HowItWorks1"
@@ -51,9 +49,15 @@
             android:name=".HowItWorks2"
             android:label="@string/title_activity_how_it_works2" >
         </activity>
+
         <activity
-            android:name=".MainActivity2Activity"
-            android:label="@string/title_activity_main_activity2" >
+            android:name=".fblogin2"
+            android:label="@string/title_activity_fblogin2" >
+            <intent-filter>
+                <action android:name="com.example.faith.selfassesment.fblogin2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 

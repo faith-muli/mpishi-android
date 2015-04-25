@@ -7,6 +7,7 @@
     <string name="title_activity_log_in">Log_in</string>
     <string name="title_activity_how_it_works1">HowItWorks1</string>
     <string name="title_activity_how_it_works2">HowItWorks2</string>
-    <string name="facebook_app_id">Facebook app id</string>
-    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+    <string name="app_id">743917039064843</string>
+    <string name="title_activity_fblogin2">fblogin2</string>
+
 </resources>

@@ -21,12 +21,14 @@ public class SplashScreen extends ActionBarActivity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent openMainActivity= new Intent("com.example.faith.selfassesment.Log_in");
+                    Intent openMainActivity= new Intent("com.example.faith.selfassesment.fblogin2");
                     startActivity(openMainActivity);
                 }
             }
         };
         timer.start();
+
+        Hashkey hashkey = new Hashkey();
     }
     @Override
     protected void onPause(){
